@@ -1,0 +1,1 @@
+# sqlserver-admin-password-rotator
