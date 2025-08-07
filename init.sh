@@ -1,16 +1,12 @@
 #!/bin/bash
 
-# read -p "Enter SQL Server host (default: localhost): " SERVER
-# SERVER=${SERVER:-localhost}
-#
-# read -p "Enter SQL Server user: " USER
-#
-# read -s -p "Enter SQL Server password: " PASSWORD
-# echo
+read -p "Enter SQL Server host (default: localhost): " SERVER
+SERVER=${SERVER:-localhost}
 
-SERVER='localhost'
-USER='SA'
-PASSWORD='Password!@'
+read -p "Enter SQL Server user: " USER
+
+read -s -p "Enter SQL Server password: " PASSWORD
+echo
 
 CREATE_USER_TABLE_QUERY="
   IF OBJECT_ID('users', 'U') IS NOT NULL DROP TABLE users;
